@@ -3,26 +3,8 @@
 int Intro()
 {
     clearScreen();
-    printf("\n\n");
-    printf("\n                                   888       888 8888888888 888      .d8888b.   .d88888b.  888b     d888 8888888888      88888888888 .d88888b.       ");
-    printf("\n                                   888   o   888 888        888     d88P  Y88b d88P\" \"Y88b 8888b   d8888 888                 888    d88P\" \"Y88b  ");     
-    printf("\n                                   888  d8b  888 888        888     888    888 888     888 88888b.d88888 888                 888    888     888      ");
-    printf("\n                                   888 d888b 888 8888888    888     888        888     888 888Y88888P888 8888888             888    888     888      ");
-    printf("\n                                   888d88888b888 888        888     888        888     888 888 Y888P 888 888                 888    888     888      ");
-    printf("\n                                   88888P Y88888 888        888     888    888 888     888 888  Y8P  888 888                 888    888     888      ");
-    printf("\n                                   8888P   Y8888 888        888     Y88b  d88P Y88b. .d88P 888   \"   888 888                 888    Y88b. .d88P     "); 
-    printf("\n                                   888P     Y888 8888888888 88888888 \"Y8888P\"   \"Y88888P\"  888       888 8888888888          888     \"Y88888P\" ");                                                                                              
-    printf("\n\n\n\n");                                                                                                                                                                                                  
-    printf("\n                                              888b     d888  .d88888b.  888b    888  .d88888b.  8888888b.   .d88888b.  888    Y88b   d88P           "); 
-    printf("\n                                              8888b   d8888 d88P\" \"Y88b 8888b   888 d88P\" \"Y88b 888   Y88b d88P\" \"Y88b 888     Y88b d88P      ");       
-    printf("\n                                              88888b.d88888 888     888 88888b  888 888     888 888    888 888     888 888      Y88o88P             "); 
-    printf("\n                                              888Y88888P888 888     888 888Y88b 888 888     888 888   d88P 888     888 888       Y888P              "); 
-    printf("\n                                              888 Y888P 888 888     888 888 Y88b888 888     888 8888888P\"  888     888 888        888              ");  
-    printf("\n                                              888  Y8P  888 888     888 888  Y88888 888     888 888        888     888 888        888               "); 
-    printf("\n                                              888   \"   888 Y88b. .d88P 888   Y8888 Y88b. .d88P 888        Y88b. .d88P 888        888              ");  
-    printf("\n                                              888       888  \"Y88888P\"  888    Y888  \"Y88888P\"  888         \"Y88888P\"  88888888   888         ");       
-    goto_XY(130,40);
-    printf("Press any key to continue...");
+    printf("MONOPOLY BOARD GAME \n\n");
+    printf("           -Tushar, Sahith, Vidip\n");
     getch();
     return EXIT_SUCCESS;
 }
@@ -31,15 +13,41 @@ int ShowRules()
 {
     clearScreen();
     printf("\n\n");
-    printf("\n          888b     d888  .d88888b.  888b    888  .d88888b.  8888888b.   .d88888b.  888    Y88b   d88P      8888888b.  888     888 888      8888888888 .d8888b.  ");
-    printf("\n          8888b   d8888 d88P\" \"Y88b 8888b   888 d88P\" \"Y88b 888   Y88b d88P\" \"Y88b 888     Y88b d88P       888   Y88b 888     888 888      888       d88P  Y88b ");
-    printf("\n          88888b.d88888 888     888 88888b  888 888     888 888    888 888     888 888      Y88o88P        888    888 888     888 888      888       Y88b.      ");
-    printf("\n          888Y88888P888 888     888 888Y88b 888 888     888 888   d88P 888     888 888       Y888P         888   d88P 888     888 888      8888888    \"Y888b.   ");
-    printf("\n          888 Y888P 888 888     888 888 Y88b888 888     888 8888888P\"  888     888 888        888          8888888P\"  888     888 888      888           \"Y88b. ");
-    printf("\n          888  Y8P  888 888     888 888  Y88888 888     888 888        888     888 888        888          888 T88b   888     888 888      888             \"888 ");
-    printf("\n          888   \"   888 Y88b. .d88P 888   Y8888 Y88b. .d88P 888        Y88b. .d88P 888        888          888  T88b  Y88b. .d88P 888      888       Y88b  d88P ");
-    printf("\n          888       888  \"Y88888P\"  888    Y888  \"Y88888P\"  888         \"Y88888P\"  88888888   888          888   T88b  \"Y88888P\"  88888888 8888888888 \"Y8888P\"  ");
-    printf("\n\n\n\n");                                                                                                                                                                                                  
+    printf("RULES \n\n\n");  
+
+    printf("PLAYER COLORS :\n");
+    printf("1)RED  2)GREEN  3)BLUE  4)PURPLE  5)CYAN  6)YELLOW  7)PURPLE  8)CYAN \n");
+    printf("Monopoly Rules: How Do You Play Monopoly?\n");
+
+    printf("According to the rules of Monopoly, the player that roles the highest total on both dice goes first. Game play proceeds clockwise from that player.\n");
+
+    printf("There are 4 main parts to a turn.\n");
+
+
+    printf("1) Roll the dice. Move the number of squares indicated. If you throw doubles, you take another turn after your turn is completed. Each time you pass Go, collect $200 from the Bank.\n");
+
+    printf("2) Buy properties. You may buy any property from the Bank that you land on if it is not already owned. If you do not purchase the property, the Banker auctions the property to the highest bidder.\n");
+
+    printf("Some people chose not to use auctions, only allowing properties to be purchased as they are landed on.\n");
+
+    printf("3) Building. You may only build when you own all properties in a color group. Building must be equal on all properties in a group. You may place a single building on a single property, but you may not place two buildings on one property unless all other properties in the group have one building present (even build rule). Any property can have a total of 4 houses, except Utilities and Railroads, which cannot be devloped. To place a hotel on a property, 4 houses must be present on all properties in the group. Houses are removed from the property when a hotel is placed. All buildings are purchased from the Bank.\n");
+
+    printf("4) Complete necessary actions. Pay rent as determined by the Title Deed for the property you are on. Pay Income Tax to the Bank ($200). Draw a Community Chest or Chance card and follow the instructions. These cards are returned to the bottom of the pile when the action is completed.\n");
+
+    printf("Going to Jail\n");
+
+    printf("In the rules of Monopoly, there are 3 ways to be sent to Jail:\n");
+
+    printf("1) Land on a space marked Go to Jail\n");
+    printf("2) Draw a card marked Go to Jail\n");
+    printf("3) Roll doubles three times in a row\n");
+
+    printf("There are 4 ways to get out of Jail\n");
+
+    printf("1) Pay the $50 fine before rolling the dice\n");
+    printf("2) Use a Get Out Of Jail Free Card before rolling the dice\n");
+    printf("3) Roll doubles\n");
+    printf("4) After the 3rd failed attempt to roll doubles, you must pay the $50 fine and leave jail\n");                               
     goto_XY(130,40);
     printf("Press any key to continue...");
     getch();
@@ -50,10 +58,8 @@ int mainGame()
 {
     clearScreen();
 
-    hideCursor();
     int GamemodeChoice = SelectGamemode();
     int maxNetworth,maxTurns;
-    showCursor();
 
     while (GamemodeChoice == NETWORTH)
     {
@@ -111,7 +117,7 @@ int mainGame()
                 printf("\nPlayer %d: %s could not be displayed\n",i+1,Players[i].name);
                 return EXIT_FAILURE;
             }
-        }
+        }   
 
         int currentTurns=0,PlayersOut=0;
         int ID=0,die1=0,die2=0,dieTotal=0,wasDouble=0;
@@ -120,7 +126,7 @@ int mainGame()
             colour(GREEN,INCREASED_INTENSITY);
             goto_XY(0,2);
             printf("\tTURN: %d     ",currentTurns+1);
-            colour(RESET,0);
+            colour(0,0);
             GraphicalPropertyInfo(Players,PlayerCount);
             CurrentPlayer = &Players[ID];
             if (!CurrentPlayer->isOut)  
@@ -128,16 +134,14 @@ int mainGame()
                 if (CurrentPlayer->isInJail)
                 {
                     ClearRightScreen(0);
-                    goto_XY(95,3); printf("PLAYER: %s CASH IN HAND: $%d NET WORTH: $%d                              ",CurrentPlayer->name,CurrentPlayer->cashInHand,CurrentPlayer->netWorth);   
+                    goto_XY(95,3); printf("PLAYER: %s CASH: $%d NET WORTH: $%d                              ",CurrentPlayer->name,CurrentPlayer->cash,CurrentPlayer->netWorth);   
                     int stay=TRUE;
                     if (CurrentPlayer->jailTurn==2)
                     {
                         goto_XY(95,5);printf("%s, do you want to pay to get out of jail or stay for %d more turns?",CurrentPlayer->name,CurrentPlayer->jailTurn+1);
                         goto_XY(95,6);printf("     1: Pay to leave");
                         goto_XY(95,7);printf("     2: Stay in Jail");
-                        hideCursor();
-                        char JailOpt=getch();
-                        showCursor();   
+                        char JailOpt=getch();   
                         while(!(JailOpt=='1'||JailOpt=='2'))
                         {
                             goto_XY(95,8);printf("Invalid option!You entered: %c  ",JailOpt);
@@ -147,7 +151,7 @@ int mainGame()
                         switch(JailOpt)
                         {
                             case'1':stay = FALSE;
-                                    CurrentPlayer->cashInHand-=100;
+                                    CurrentPlayer->cash-=100;
                                     CurrentPlayer->netWorth-=100;  //Pay to leave
                                     CurrentPlayer->jailTurn=0;
                                     CurrentPlayer->isInJail=FALSE;
@@ -173,7 +177,7 @@ int mainGame()
                 {
                     // To do: Graphical Representaion of each property with info like no. of houses/hotels, set colour, property owner through colour 
 
-                    goto_XY(95,3); printf("PLAYER: %s CASH IN HAND: $%d NET WORTH: $%d                              ",CurrentPlayer->name,CurrentPlayer->cashInHand,CurrentPlayer->netWorth);   
+                    goto_XY(95,3); printf("PLAYER: %s CASH: $%d NET WORTH: $%d                              ",CurrentPlayer->name,CurrentPlayer->cash,CurrentPlayer->netWorth);   
                     ClearRightScreen(16);
                     int Choice=0;
                     if (wasDouble==0)
@@ -216,7 +220,7 @@ int mainGame()
                             if ((CurrentPlayer->currentLocation->ID)+dieTotal > 40)
                             {
                                 goto_XY(95,23);printf("%s passed %s and collects $200!",CurrentPlayer->name,Location[0].name);
-                                CurrentPlayer->cashInHand += 200;
+                                CurrentPlayer->cash += 200;
                                 CurrentPlayer->netWorth   += 200; 
                                 CurrentPlayer->currentLocation=&Location[((CurrentPlayer->currentLocation->ID)+dieTotal)-39];
                                 GraphicalMove(CurrentPlayer,OldLocationID,CurrentPlayer->currentLocation->ID);      
@@ -266,7 +270,7 @@ int mainGame()
                                                 case 3 : printf("to Monopoly man!");break;
                                                 default: printf("to the BANK!");break;
                                             }
-                                            CurrentPlayer->cashInHand-=drawnCard.money;                                        
+                                            CurrentPlayer->cash-=drawnCard.money;                                        
                                             CurrentPlayer->netWorth  -=drawnCard.money;
                                             break;
                                         }
@@ -291,7 +295,7 @@ int mainGame()
                                                 case 3 : printf("from Monopoly man!");break;
                                                 default: printf("from the BANK!");break;
                                             }
-                                            CurrentPlayer->cashInHand+=drawnCard.money;                                        
+                                            CurrentPlayer->cash+=drawnCard.money;                                        
                                             CurrentPlayer->netWorth  +=drawnCard.money;
                                             break;
                                         }
@@ -319,7 +323,7 @@ int mainGame()
                             case TAX:    
                             {  
                                 goto_XY(95,25);printf("%s pays %d as tax!",CurrentPlayer->name,CurrentPlayer->currentLocation->rent);
-                                CurrentPlayer->cashInHand -= CurrentPlayer->currentLocation->rent;
+                                CurrentPlayer->cash -= CurrentPlayer->currentLocation->rent;
                                 CurrentPlayer->netWorth   -= CurrentPlayer->currentLocation->rent; 
                                 break;
                             }
@@ -344,9 +348,9 @@ int mainGame()
 
                                         goto_XY(95,26);printf("%s paid %s $%d!",CurrentPlayer->name,Players[CurrentPlayer->currentLocation->ownerID -1].name,Rent);
                                         
-                                        CurrentPlayer->cashInHand -= Rent;
+                                        CurrentPlayer->cash -= Rent;
                                         CurrentPlayer->netWorth   -= Rent;
-                                        Players[CurrentPlayer->currentLocation->ownerID -1].cashInHand += Rent;
+                                        Players[CurrentPlayer->currentLocation->ownerID -1].cash += Rent;
                                         Players[CurrentPlayer->currentLocation->ownerID -1].netWorth   += Rent;
                                     }
                                 }
@@ -360,7 +364,7 @@ int mainGame()
                             }
                         }  
                         
-                        CurrentPlayer->isBankrupt=IsPlayerBankrupt(CurrentPlayer->cashInHand);
+                        CurrentPlayer->isBankrupt=IsPlayerBankrupt(CurrentPlayer->cash);
                         if(CurrentPlayer->isBankrupt)
                         {
                             goto_XY(95,30);printf("%s IS BANKRUPT !!!",CurrentPlayer->name);
@@ -482,25 +486,7 @@ int mainGame()
 int ThankYou()
 {
     clearScreen();
-    printf("\n\n");
-    printf("\n                              88888888888 888    888        d8888 888b    888 888    d8P   .d8888b.       8888888888 .d88888b.  8888888b.  ");
-    printf("\n                                  888     888    888       d88888 8888b   888 888   d8P   d88P  Y88b      888       d88P\" \"Y88b 888   Y88b ");
-    printf("\n                                  888     888    888      d88P888 88888b  888 888  d8P    Y88b.           888       888     888 888    888 ");
-    printf("\n                                  888     8888888888     d88P 888 888Y88b 888 888d88K      \"Y888b.        8888888   888     888 888   d88P ");
-    printf("\n                                  888     888    888    d88P  888 888 Y88b888 8888888b        \"Y88b.      888       888     888 8888888P\"  ");
-    printf("\n                                  888     888    888   d88P   888 888  Y88888 888  Y88b         \"888      888       888     888 888 T88b   ");
-    printf("\n                                  888     888    888  d8888888888 888   Y8888 888   Y88b  Y88b  d88P      888       Y88b. .d88P 888  T88b  ");
-    printf("\n                                  888     888    888 d88P     888 888    Y888 888    Y88b  \"Y8888P\"       888        \"Y88888P\"  888   T88b ");
-    printf("\n\n\n\n");                                                                                                                                           
-    printf("\n                                              8888888b.  888             d8888 Y88b   d88P 8888888 888b    888  .d8888b.  888              ");
-    printf("\n                                              888   Y88b 888            d88888  Y88b d88P    888   8888b   888 d88P  Y88b 888              ");
-    printf("\n                                              888    888 888           d88P888   Y88o88P     888   88888b  888 888    888 888              ");
-    printf("\n                                              888   d88P 888          d88P 888    Y888P      888   888Y88b 888 888        888              ");
-    printf("\n                                              8888888P\"  888         d88P  888     888       888   888 Y88b888 888  88888 888              ");
-    printf("\n                                              888        888        d88P   888     888       888   888  Y88888 888    888 Y8P              ");
-    printf("\n                                              888        888       d8888888888     888       888   888   Y8888 Y88b  d88P  \"               ");
-    printf("\n                                              888        88888888 d88P     888     888     8888888 888    Y888  \"Y8888P88 888              ");
-    printf("\n\n\n\n");                                                                                                                                                                                                  
+    printf("THE END \n\n\n");                                                                                                                                                                                                  
     goto_XY(130,40);
     printf("Press any key to continue...");
     getch();
