@@ -1,4 +1,4 @@
 # Monopoly Board Game
-Monopoly board game in C (Indian Version)
+Monopoly board game in C
 
 In progress....
