@@ -6,15 +6,7 @@ int SelectGamemode()
     while(TRUE)
     {
         clearScreen();
-        printf("\n     .d8888b.  8888888888 888      8888888888 .d8888b. 88888888888       .d8888b.         d8888 888b     d888 8888888888 888b     d888  .d88888b.  8888888b.  8888888888 ");
-        printf("\n    d88P  Y88b 888        888      888       d88P  Y88b    888          d88P  Y88b       d88888 8888b   d8888 888        8888b   d8888 d88P\" \"Y88b 888  \"Y88b 888        ");
-        printf("\n    Y88b.      888        888      888       888    888    888          888    888      d88P888 88888b.d88888 888        88888b.d88888 888     888 888    888 888        ");
-        printf("\n     \"Y888b.   8888888    888      8888888   888           888          888            d88P 888 888Y88888P888 8888888    888Y88888P888 888     888 888    888 8888888    ");
-        printf("\n        \"Y88b. 888        888      888       888           888          888  88888    d88P  888 888 Y888P 888 888        888 Y888P 888 888     888 888    888 888        ");
-        printf("\n          \"888 888        888      888       888    888    888          888    888   d88P   888 888  Y8P  888 888        888  Y8P  888 888     888 888    888 888        ");
-        printf("\n    Y88b  d88P 888        888      888       Y88b  d88P    888          Y88b  d88P  d8888888888 888   \"   888 888        888   \"   888 Y88b. .d88P 888  .d88P 888        ");
-        printf("\n     \"Y8888P\"  8888888888 88888888 8888888888 \"Y8888P\"     888           \"Y8888P88 d88P     888 888       888 8888888888 888       888  \"Y88888P\"  8888888P\"  8888888888 ");
-        printf("\n\n\n\n\n");
+        printf("GAMEMODE OPTIONS \n\n\n");
         printf("\n\tChoose a game mode:");
         printf("\n\t  1-Net Worth : First player to reach a certain amount wins");
         printf("\n\t  2-Turns     : Game ends after ceratin number of turns/rounds are over");
@@ -39,21 +31,21 @@ int SelectGamemode()
 
 int ReadLocations()
 {
-	FILE *file = fopen(LOCATION_PATH, "r");
-	if (!file)
+    FILE *file = fopen(LOCATION_PATH, "r");
+    if (!file)
         return EXIT_FAILURE;
-	else
+    else
     {
-		char buffer[1024];
-		int row = 0, column = 0;
-		while (fgets(buffer,1024, file))
+        char buffer[1024];
+        int row = 0, column = 0;
+        while (fgets(buffer,1024, file))
         {
-			column = 0; 
-			char* value = strtok(buffer, ",");
+            column = 0; 
+            char* value = strtok(buffer, ",");
             while (value) 
             {
                 if (row == 0)
-				    break;
+                    break;
                 if (strcmpi(value,"-")!=0)
                 {    
                     switch(column)
@@ -146,13 +138,13 @@ int ReadLocations()
                         }
                     }
                 }
-				value = strtok(NULL, ",");
-				column++;
-			}
+                value = strtok(NULL, ",");
+                column++;
+            }
             row++;
-		}
-		fclose(file);
-	}
+        }
+        fclose(file);
+    }
     return EXIT_SUCCESS;
 }
 
@@ -183,45 +175,45 @@ int DisplayMap()
     colour(BLACK,INCREASED_INTENSITY);
     clearScreen();
     printf("\n");
-    printf("\n                ST.CH  ELCT  STATES VRGNIA PNSLVA  ST.JA   COM    TEN    NY    FREE         ");
-    printf("\n                 AVE   COMP    AVE    AVE   RAIL    AVE   CHEST   AVE   AVE    PARK         ");
+    printf("\n                LUDHI  ELCT  PATNA  BHOPAL HOWRAH INDORE  COM   NAGPUR  KOCHI  FREE         ");
+    printf("\n                 ANA   COMP                  RS          CHEST                 PARK         ");
     printf("\n        ____________________________________________________________________________        ");
     printf("\n VISIT |      |      |      |      |      |      |      |      |      |      |      |       ");
     printf("\n  JAIL |      |      |      |      |      |      |      |      |      |      |      |       ");
     printf("\n       |______|______|______|______|______|______|______|______|______|______|______|       ");
-    printf("\n CNNCT |      |                                                              |      | KNTCY ");
-    printf("\n  AVE  |      |                                                              |      |  AVE  ");
+    printf("\n VADOD |      |                                                              |      | LUCK  ");
+    printf("\n  ARA  |      |                                                              |      |  NOW  ");
     printf("\n       |______|                                                              |______|       ");
-    printf("\n VERMNT|      |                                                              |      |       ");
-    printf("\n  AVE  |      |                                                              |      |CHANCE ");
+    printf("\n AGRA  |      |                                                              |      |       ");
+    printf("\n       |      |                                                              |      | CHANCE");
     printf("\n       |______|                                                              |______|       ");
-    printf("\n       |      |                                                              |      |  IND  ");
-    printf("\n CHANCE|      |                                                              |      |  AVE  ");
+    printf("\n       |      |                                                              |      | CHANDI");
+    printf("\n CHANCE|      |                                                              |      |  GARH ");
     printf("\n       |______|                                                              |______|       ");
-    printf("\n ORNTL |      |                                                              |      |  ILL  ");
-    printf("\n  AVE  |      |                                                              |      |  AVE  ");
+    printf("\n  GOA  |      |                                                              |      |       ");
+    printf("\n       |      |                                                              |      | JAIPUR");
     printf("\n       |______|                                                              |______|       ");
-    printf("\n  READ |      |                                                              |      | B&O.  ");
-    printf("\n  RAIL |      |                                                              |      | RAIL  ");
+    printf("\n CHENI |      |                                                              |      | DELHI ");
+    printf("\n  RS   |      |                                                              |      |  RS   ");
     printf("\n       |______|                                                              |______|       ");
-    printf("\n       |      |                                                              |      |ATLNTC ");
-    printf("\n  TAX  |      |                                                              |      |  AVE  ");
+    printf("\n       |      |                                                              |      |       ");
+    printf("\n  TAX  |      |                                                              |      |  PUNE ");
     printf("\n       |______|                                                              |______|       ");
-    printf("\n BALTIC|      |                                                              |      | VNTNR ");
-    printf("\n  AVE  |      |                                                              |      |  AVE  ");
+    printf("\n  BBSR |      |                                                              |      |       ");
+    printf("\n       |      |                                                              |      |  HYD  ");
     printf("\n       |______|                                                              |______|       ");
     printf("\n  COM  |      |                                                              |      | WATER ");
     printf("\n CHEST |      |                                                              |      | WORKS ");
     printf("\n       |______|                                                              |______|       ");
-    printf("\n MEDTRN|      |                                                              |      | MRVN  ");
-    printf("\n  AVE  |      |                                                              |      | GRDNS ");
+    printf("\n GUWAH |      |                                                              |      | AHMED ");
+    printf("\n  ATI  |      |                                                              |      | ABAD  ");
     printf("\n       |______|______________________________________________________________|______|       ");
     printf("\n       |      |      |      |      |      |      |      |      |      |      |      | GO TO ");
     printf("\n START |      |      |      |      |      |      |      |      |      |      |      |  JAIL ");
     printf("\n       |______|______|______|______|______|______|______|______|______|______|______|       ");
-    printf("\n                BRDWK LUXURY  PARK  CHANCE  SHORT PNSLVA   COM    NC    PCFC                ");
-    printf("\n                       TAX    PLACE         LINE    AVE   CHEST   AVE   AVE                 ");
-    colour(RESET,0);
+    printf("\n               MUMBAI LUXURY  DELHI CHANCE  C.S    BANGA  COM    CHEN   KOLK                ");
+    printf("\n                       TAX                  TRML   LURE   CHEST   NAI   ATA                 ");
+    colour(0,0);
     return EXIT_SUCCESS;
 }
 
@@ -242,11 +234,11 @@ int GraphicalPropertyInfo(struct player Players[],int playerCount)
                 goto_XY(map[ID-1][0]+5,map[ID-1][1]);
                 colour(Location[i].setColour,0);
                 printf(" ");
-                colour(RESET,RESET);
+                colour(0,0);
             }        
             if(Location[i].isOwnable)
             {
-                colour(RESET,RESET);
+                colour(0,0);
                 goto_XY(map[ID-1][0]+4,map[ID-1][1]+1);
                 printf("  ");
             }
@@ -263,14 +255,14 @@ int GraphicalPropertyInfo(struct player Players[],int playerCount)
                         else if (Location[i].housesBuilt>0)
                             printf("%dH",Location[i].housesBuilt);
                         else
-                            printf(" X");
-                        colour(RESET,RESET);
+                            printf(" B");
+                        colour(0,0);
                     }
                 }
             }
             
         }
     }
-    colour(RESET,RESET);
+    colour(0,0);
     return EXIT_SUCCESS;
 }
